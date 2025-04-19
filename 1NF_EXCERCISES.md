@@ -43,7 +43,7 @@ INSERT INTO PaymentStructure (InvoiceId, PaymentDate, CashPayment, CardPayment, 
 
 ---
 
-### 👤 Tabela 2: `UserAccountRoles`
+### 👤 Tabela 2: `UserAccountRoles` (poziom: ULTRA HARD - dla chętnych)
 
 | AccountId | CustomerId | 👥 Username | 🛡️ Roles               |
 |-----------|------------|-------------|------------------------|
