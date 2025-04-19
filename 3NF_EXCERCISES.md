@@ -1,4 +1,4 @@
-## 🧩 Zadanie: Normalizacja do 3NF (Chinook Edition)
+## 🧩 Zadanie: Normalizacja do 3NF
 
 Poniższe przykłady przedstawiają tabele, które spełniają wymagania **drugiej postaci normalnej (2NF)**, ale **nie spełniają założeń trzeciej postaci normalnej (3NF)**.
 
