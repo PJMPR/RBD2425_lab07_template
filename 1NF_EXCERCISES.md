@@ -10,7 +10,7 @@ Tabela w 1NF nie powinna zawierać:
 
 ---
 
-### 📄 Tabela 1: `StrangePaymentStructure`
+### 📄 Tabela 1: `PaymentStructure`
 
 | InvoiceId | 🗓️ PaymentDate | 💵 CashPayment | 💳 CardPayment | 💸 TransferPayment |
 |-----------|---------------|----------------|----------------|--------------------|
@@ -24,7 +24,7 @@ Tabela w 1NF nie powinna zawierać:
 
 ```sql
 -- Tworzenie tabeli StrangePaymentStructure
-CREATE TABLE StrangePaymentStructure (
+CREATE TABLE PaymentStructure (
     InvoiceId INT PRIMARY KEY,
     PaymentDate DATE,
     CashPayment DECIMAL(10,2),
@@ -33,7 +33,7 @@ CREATE TABLE StrangePaymentStructure (
 );
 
 -- Wstawienie przykładowych danych
-INSERT INTO StrangePaymentStructure (InvoiceId, PaymentDate, CashPayment, CardPayment, TransferPayment) VALUES
+INSERT INTO PaymentStructure (InvoiceId, PaymentDate, CashPayment, CardPayment, TransferPayment) VALUES
 (101, '2023-04-01', 10.00, 29.99, NULL),
 (102, '2023-04-02', NULL, NULL, 40.00),
 (103, '2023-04-03', 10.00, 20.00, NULL),
