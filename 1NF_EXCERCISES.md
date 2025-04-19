@@ -43,33 +43,6 @@ INSERT INTO PaymentStructure (InvoiceId, PaymentDate, CashPayment, CardPayment, 
 
 ---
 
-### 👤 Tabela 2: `UserAccountRoles` (poziom: ULTRA HARD - dla chętnych)
-
-| AccountId | CustomerId | 👥 Username | 🛡️ Roles               |
-|-----------|------------|-------------|------------------------|
-| 1         | 34         | user34      | user, admin            |
-| 2         | 55         | anowak      | user                   |
-| 3         | 67         | jdoe        | user, editor, viewer   |
-
-> ❌ **Problem:** kolumna `Roles` zawiera wiele wartości oddzielonych przecinkami, co łamie 1NF.
-
-```sql
--- Tworzenie tabeli UserAccountRoles
-CREATE TABLE UserAccountRoles (
-    AccountId INT PRIMARY KEY,
-    CustomerId INT,
-    Username VARCHAR(50),
-    Roles TEXT
-);
-
--- Wstawienie przykładowych danych
-INSERT INTO UserAccountRoles (AccountId, CustomerId, Username, Roles) VALUES
-(1, 34, 'user34', 'user, admin'),
-(2, 55, 'anowak', 'user'),
-(3, 67, 'jdoe', 'user, editor, viewer');
-```
-
----
 
 ### 🎯 Twoje zadanie:
 Dla każdej z tabel:
