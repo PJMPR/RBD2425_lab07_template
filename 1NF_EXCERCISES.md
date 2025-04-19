@@ -1,4 +1,4 @@
-## 🧩 Zadanie: Normalizacja do 1NF (Chinook Edition)
+## 🧩 Zadanie: Normalizacja do 1NF
 
 Na podstawie poniższych **nienormalnych struktur tabel** (nie spełniających 1NF), dokonaj ich transformacji tak, aby spełniały założenia **pierwszej postaci normalnej (1NF)**.
 
