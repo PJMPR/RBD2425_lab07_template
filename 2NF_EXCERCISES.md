@@ -1,4 +1,4 @@
-## 🧩 Zadanie: Normalizacja do 2NF (Chinook Edition)
+## 🧩 Zadanie: Normalizacja do 2NF
 
 Poniższe przykłady przedstawiają tabele, które spełniają wymagania **pierwszej postaci normalnej (1NF)**, ale **nie spełniają założeń drugiej postaci normalnej (2NF)**.
 
