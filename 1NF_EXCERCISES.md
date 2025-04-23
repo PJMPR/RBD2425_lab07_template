@@ -23,7 +23,7 @@ Tabela w 1NF nie powinna zawierać:
 > ❌ **Problem:** osobne kolumny dla różnych metod płatności zamiast jednego, elastycznego atrybutu.
 
 ```sql
--- Tworzenie tabeli StrangePaymentStructure
+-- Tworzenie tabeli PaymentStructure
 CREATE TABLE PaymentStructure (
     InvoiceId INT PRIMARY KEY,
     PaymentDate DATE,
@@ -51,6 +51,8 @@ Dla każdej z tabel:
 2️⃣ Zaproponuj jednego lub więcej **nowych schematów tabel**, które będą spełniać wymagania 1NF.  
 3️⃣ Zdefiniuj odpowiednie **klucze główne i obce**.  
 4️⃣ Użyj **transakcji**, aby przekopiować dane z oryginalnej tabeli do nowej, znormalizowanej struktury (przy użyciu `BEGIN`, `INSERT`, `COMMIT`).
+
+5️⃣ Przygotuj odpowiedni trigger, który będzie uruchamiany przy dodaniu nowego rekordu do tabeli PaymentStructure. Jego zadaniem będzie automatyczne przeniesienie danych do nowych (znormalizowanych) tabel.
 
 ---
 
